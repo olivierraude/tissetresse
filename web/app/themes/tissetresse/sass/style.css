@@ -406,3 +406,8 @@ h1 {
   font-weight: 600;
   text-transform: uppercase;
 }
+
+section {
+  max-width: 1440px;
+  margin: auto;
+}

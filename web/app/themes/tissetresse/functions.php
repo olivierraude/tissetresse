@@ -18,6 +18,8 @@ function theme_register_assets()
   wp_enqueue_script('monscript');
 }
 
+// Disable Gutenberg
+add_filter('use_block_editor_for_post', '__return_false');
 
 add_action('after_setup_theme', 'theme_supports');
 add_action('wp_enqueue_scripts', 'theme_register_assets');
